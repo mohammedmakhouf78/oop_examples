@@ -22,6 +22,11 @@ class User
         $roomUser->user_id = $this->id;
         $roomUser->room_id = $room->id;
         $roomUser->days = $roomUserDays;
-        var_dump($roomUser);
+        return $roomUser;
+    }
+
+    public function makeReview(Room $room)
+    {
+        //user can make review on a room
     }
 }
